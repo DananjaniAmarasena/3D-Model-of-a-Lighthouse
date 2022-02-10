@@ -117,9 +117,9 @@ static unsigned int texture[4];
 
 void loadExternalTextures() {
 	BitMapFile* image[4];
-	image[0] = getbmp("E:/UOP/3rd year/2nd sem/CS 308/Images/water.bmp");
-	image[1] = getbmp("E:/UOP/3rd year/2nd sem/CS 308/Images/beach.bmp");
-	image[2] = getbmp("E:/UOP/3rd year/2nd sem/CS 308/Images/grass.bmp");
+	image[0] = getbmp("Images/water.bmp");
+	image[1] = getbmp("Images/beach.bmp");
+	image[2] = getbmp("Images/grass.bmp");
 
 	glBindTexture(GL_TEXTURE_2D, texture[0]);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image[0]->sizeX, image[0]->sizeY, 0, GL_RGBA, GL_UNSIGNED_BYTE, image[0]->data);
